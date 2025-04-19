@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "title": "HTML",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "id": 2,
+    "title": "CSS",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "id": 3,
+    "title": "JavaScript",
+    "imageSrc": "skills/javascript.png"
+  },
+  {
+    "id": 4,
+    "title": "Python",
+    "imageSrc": "skills/Python.png"
+  },
+  {
+    "id": 5,
+    "title": "SQL",
+    "imageSrc": "skills/sql.webp"
+  },
+  {
+    "id": 6,
+    "title": "Power BI",
+    "imageSrc": "skills/power.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Azure",
+    "imageSrc": "skills/azure.png"
+  },
+  {
+    "id": 8,
+    "title": "Salesforce",
+    "imageSrc": "skills/salesforce.png"
+  },
+  {
+    "id": 9,
+    "title": "MuleSoft",
+    "imageSrc": "skills/Mulesoft.png"
+  },
+  {
+    "id": 7,
+    "title": "Hadoop",
+    "imageSrc": "skills/hadoop-logo.png"
+  },
+  {
+    "id": 8,
+    "title": "GitLab",
+    "imageSrc": "skills/GitLab_Logo.png"
+  },
+  {
+    "id": 9,
+    "title": "XML",
+    "imageSrc": "skills/xml-file-8-504251.webp"
+  },
+  {
+    "id": 7,
+    "title": "Databricks",
+    "imageSrc": "skills/databricks-c40eaf44.png"
+  },
+  {
+    "id": 8,
+    "title": "PySpark",
+    "imageSrc": "skills/PySpark-Logo-1.webp"
+  },
+  {
+    "id": 9,
+    "title": "JIRA",
+    "imageSrc": "skills/Jira-PNG-HD.png"
+  }
+]

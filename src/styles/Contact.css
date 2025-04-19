@@ -1,0 +1,47 @@
+.contact {
+  padding: 60px 0 120px;
+  text-align: center;
+  background-color: var(--body-bg);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact h1 {
+  color: var(--accent-color);
+  margin-bottom: 30px;
+  transition: color 0.3s ease;
+}
+
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+/* Icon button styles */
+.contact-icon .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.contact-icon .items:hover {
+  transform: translateY(-5px);
+  background-color: var(--accent-bg-hover, rgba(100, 255, 218, 0.1));
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.icons {
+  font-size: 2rem;
+}

@@ -1,0 +1,303 @@
+/* src/styles/ThemeToggle.css */
+.theme-toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  z-index: 10;
+}
+
+.toggle-wrapper {
+  position: relative;
+}
+
+.theme-toggle {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* Dark/Light Toggle Styles */
+.theme-toggle-label.mode-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65px;
+  height: 30px;
+  background-color: rgba(150, 150, 150, 0.15);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border: 2px solid #888;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 0 5px;
+}
+
+.theme-toggle-label.mode-toggle.active {
+  background-color: rgba(var(--accent-color-rgb), 0.2);
+  border-color: var(--accent-color);
+}
+
+.toggle-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  font-size: 16px;
+}
+
+.toggle-icon-wrapper.light {
+  color: #f9d71c;
+}
+
+.toggle-icon-wrapper.dark {
+  color: #5b5fa1;
+}
+
+.toggle-ball {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle:checked + .theme-toggle-label.mode-toggle .toggle-ball {
+  transform: translateX(35px);
+  background-color: #2f3144;
+}
+
+.toggle-icon {
+  font-size: 14px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:checked + .theme-toggle-label.mode-toggle .toggle-icon {
+  color: #fff;
+}
+
+/* ENHANCED Animation Toggle Styles */
+.animation-toggle-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.animation-track {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(150, 150, 150, 0.15);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  border: 2px solid #888;
+  overflow: hidden;
+}
+
+.animation-toggle-label.active .animation-track {
+  background: linear-gradient(45deg, #ff00aa, #aa00ff);
+  border-color: #d136ff;
+  box-shadow: 0 0 15px rgba(209, 54, 255, 0.6);
+}
+
+.animation-icon {
+  font-size: 16px;
+  color: #888;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.animation-toggle-label.active .animation-icon {
+  color: #fff;
+  animation: zap-pulse 1.5s infinite;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+}
+
+.animation-text {
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.animation-toggle-label.active .animation-text {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Sparkles for animation effect */
+.animation-sparkles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.sparkle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.sparkle-1 {
+  top: 20%;
+  left: 20%;
+}
+
+.sparkle-2 {
+  top: 60%;
+  right: 30%;
+}
+
+.sparkle-3 {
+  top: 40%;
+  right: 15%;
+}
+
+.animation-toggle-label.active .sparkle {
+  animation: sparkle-animation 2s infinite;
+}
+
+.animation-toggle-label.active .sparkle-1 {
+  animation-delay: 0s;
+}
+
+.animation-toggle-label.active .sparkle-2 {
+  animation-delay: 0.3s;
+}
+
+.animation-toggle-label.active .sparkle-3 {
+  animation-delay: 0.6s;
+}
+
+/* Hover effects */
+.theme-toggle-label:hover,
+.animation-toggle-label:hover {
+  opacity: 0.9;
+}
+
+.animation-toggle-label:hover .animation-track {
+  transform: scale(1.03);
+}
+
+/* Accessibility focus styles */
+.theme-toggle:focus + .theme-toggle-label,
+.theme-toggle:focus + .animation-toggle-label {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zap-pulse {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.2) rotate(5deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  75% {
+    transform: scale(1.2) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes sparkle-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  20% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(15px, -15px) scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(30px, -30px) scale(0);
+    opacity: 0;
+  }
+}
+
+/* Button press effect */
+.animation-toggle-label:active .animation-track {
+  transform: scale(0.95);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .theme-toggle-container {
+    gap: 8px;
+  }
+  
+  .theme-toggle-label.mode-toggle {
+    width: 60px;
+    height: 28px;
+  }
+  
+  .toggle-ball {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .theme-toggle:checked + .theme-toggle-label.mode-toggle .toggle-ball {
+    transform: translateX(32px);
+  }
+  
+  .animation-toggle-label {
+    width: 70px;
+    height: 30px;
+  }
+}

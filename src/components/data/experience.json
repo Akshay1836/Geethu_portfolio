@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "role": "ETL Developer Intern",
+    "organisation": "IQVIA",
+    "startDate": " January 2020",
+    "endDate": "April 2020   ",
+    "location": "Kochi, India ",
+    "experiences": [
+      "Created APIs using MuleSoft with connectors like HTTP, Salesforce, and SFTP for seamless data integration across platforms.",
+      "Created APIs using MuleSoft with connectors like HTTP, Salesforce, and SFTP for seamless data integration across platforms.",
+      "Developed reusable ETL workflows using SSIS for data extraction, transformation, and loading from multiple sources.",
+      "Participated in the full development lifecycle, automating repetitive tasks to improve productivity and reduce processing times."
+    ],
+    "imageSrc": "company/iqvia.png"
+  },
+  {
+    "id": 1,
+    "role": "Software Developer - Data Integration",
+    "organisation": "IQVIA",
+    "startDate": " October 2020",
+    "endDate": "August 2023   ",
+    "location": "Kochi, India ",
+    "experiences": [
+      "Designed and developed robust ETL pipelines for batch and real-time data processing, improving system efficiency and data accessibility.",
+      "Integrated Salesforce, SAP, and other enterprise systems using MuleSoft to streamline data flows and ensure consistency.",
+      "Implemented CI/CD pipelines using GitLab for efficient deployment and version control of data integration processes."
+    ],
+    "imageSrc": "company/iqvia.png"
+  }
+ 
+]
+ 

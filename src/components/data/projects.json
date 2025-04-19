@@ -1,0 +1,51 @@
+[
+  {    "id": 1,
+    "key": 1,
+    "title": "React E-Commerce",
+    "imageSrc": "assets/ProjectPic/E-commerce.jpg",
+    "description": "Welcome to our React E-Commerce platform! Explore a curated selection of products with easy navigation and secure checkout",
+    "demo": "https://e-cart-clinte.vercel.app/",
+    "source": "https://github.com/ShivamG1979/E_CART_Clinte"
+  },
+  { "id": 2,
+    "key": 2,
+    "title": "MERN Blogging",
+    "imageSrc": "assets/ProjectPic/Blog.jpg",
+    "description": "Create a dynamic blog using React for frontend, Node.js and Express for backend APIs with MongoDB, including JWT authentication, and deploy Vercel And Render",
+    "demo": "https://blog-post-client-six.vercel.app/",
+    "source": "https://github.com/ShivamG1979/Blog_Post_Client"
+  },
+  { "id": 3,
+    "key": 3,
+    "title": "Book-Library",
+    "imageSrc": "assets/ProjectPic/Library.jpg",
+    "description": "This is a project made with complete React js.",
+    "demo": "https://library-frontend-delta-blue.vercel.app/",
+    "source": "https://github.com/ShivamG1979/Library_Frontend"
+  },
+  { "id": 4,
+    "key": 4,
+    "title": "visualization-Dashboard ",
+    "imageSrc": "assets/ProjectPic/visualization.png",
+    "description": "A dynamic MERN stack dashboard that visualizes complex data using interactive charts with filters like Year, Region, and Sector",
+    "demo": "https://dashboard-frontend-eta-eight.vercel.app/",
+    "source": "https://github.com/ShivamG1979/Dashboard-frontend"
+  },
+  { "id": 5,
+    "key": 5,
+    "title": "Contact_Keeper ",
+    "imageSrc": "assets/ProjectPic/Keeper.jpg",
+    "description": "Contact Keepr is a full-stack contact management app built with the MERN stack . It features secure authentication, CRUD operations, image uploads, search, favorites, filters, and bulk import/export ",
+    "demo": "https://contact-keeper-client.vercel.app/",
+    "source": "https://github.com/ShivamG1979/Contact_Keeper_Client"
+  },
+  { "id": 6,
+    "key": 6,
+    "title": "PortFolio-2 ",
+    "imageSrc": "assets/ProjectPic/Portfolio-2.webp",
+    "description": "A fast and modern portfolio website built with React and Vite.Showcases projects, skills, and contact info with a responsive, clean UI",
+    "demo": "https://portfolio-black-five-50.vercel.app/",
+    "source": "https://github.com/ShivamG1979/PORTFOLIO"
+  }
+  
+]

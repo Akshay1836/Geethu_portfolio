@@ -1,0 +1,11 @@
+{
+    "greeting": "Hello, I'm",
+    "name": "Geethu P Uday",
+    "titles": [
+      "Data Engineer ",
+      "MuleSoft Developer"
+      
+    ],
+    "bio": "Data Engineer with 3+ years of experience in data integration, ETL workflows, and data pipeline development. Proficient in Python, SQL, and big data technologies such as PySpark and Hadoop.",
+    "image": "assets/hero/DP3.jpeg"
+  }

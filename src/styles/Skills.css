@@ -1,0 +1,50 @@
+.skills {
+  padding: 60px 0;
+}
+
+.skills h1 {
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.skills .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.skills .item {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.skills .item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow);
+  border-color: var(--border-color-hover);
+}
+
+.skills .item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.skills .item h3 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  text-align: center;
+}

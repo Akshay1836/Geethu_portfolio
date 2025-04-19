@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "degree": "B.E. Civil Engineering (Honours)",
+    "institution": "MA college of engineering",
+    "location": "Kothamangalam,Kerala",
+    "year": "2016-2020",
+    "description": "Graduated with honours in Civil Engineering. Gained hands-on experience in structural analysis, project planning, and construction management through academic projects and field work.",
+    "courses": [
+      "Structural Analysis",
+      "Concrete Technology",
+      "Geotechnical Engineering",
+      "Transportation Engineering"
+    ],
+    "logoSrc": "/Education/ma.png"
+  },
+  {
+    "id": 2,
+    "degree": "Master of Science in Data science and Statistical Learning",
+    "institution": "University of Limerick ",
+    "location": "Limerick,IRELAND",
+    "year": "2023 - 2024",
+    "description": "Pursuing a master's degree focused on advanced data analysis, machine learning, and statistical modeling. Acquired practical experience in handling large datasets and building predictive models.",
+    "courses": [
+      "Machine Learning",
+      "Statistical Modeling",
+      "Data Visualization",
+      "Big Data Analytics"
+    ],
+    "logoSrc": "/Education/limerick.jpg"
+  }
+]
